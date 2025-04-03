@@ -1,4 +1,4 @@
-public class JavaBasics {
+public class StarPattern {
     public static void main(String[] args) {
         //optimize approach
         for (int line = 7; line >= 1; line--) {

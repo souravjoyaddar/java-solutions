@@ -1,6 +1,6 @@
 import java.util.*;
 // reverse a number
-public class JavaBasics {
+public class ReverseNum {
     public static void main(String argr[]) {
         Scanner sc = new Scanner(System.in);
         int number = sc.nextInt(); // n = 123

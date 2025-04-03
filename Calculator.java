@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class JavaBasics {
+public class Calculator {
     public static void main(String argr[]) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the value of a: ");
