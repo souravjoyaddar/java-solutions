@@ -1,3 +1,4 @@
+import java.util.*;
 public class AvgCalculator {
 
     public static int getAvg(int num1, int num2, int num3) {
@@ -6,7 +7,13 @@ public class AvgCalculator {
     }
 
     public static void main(String[] args) {
-        int result = getAvg(25, 10, 100);
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter 3 number to calculate the average: ");
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        int num3 = sc.nextInt();
+        int result = getAvg(num1, num2, num3);
+        sc.close();
         System.out.println("The average of 3 numbers is = " + result);
     }
 }
