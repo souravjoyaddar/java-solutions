@@ -53,12 +53,25 @@ public class Patterns {
         }
     }
 
+    //floydsTrangle
+    public static void floydsTrangle(int n) {
+        int counter = 1;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(counter + " ");
+                counter++;
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         // hollowRectngle(3, 4);
         // invertedRoatedHalfPyramiid(5);
-        invertedPyramidWithNumbers(6);
+        // invertedPyramidWithNumbers(6);
         // pyramidWithNumbers(5);
         // invrPyraWithNum2(5);
+        floydsTrangle(5);
 
     }
 }
