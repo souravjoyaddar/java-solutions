@@ -46,7 +46,7 @@ public class Patterns {
     //aproach 2
     public static void invrPyraWithNum2(int n) {
         for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n-i+1; j++) {
+            for (int j = 1; j <= (n-i)+1; j++) {
                 System.out.print(j + " ");
             }
             System.out.println();
@@ -64,6 +64,7 @@ public class Patterns {
             System.out.println();
         }
     }
+    //zero one traingle
     public static void zeroOneTraingle(int n) {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
@@ -76,6 +77,37 @@ public class Patterns {
             System.out.println();
         }
     }
+
+    //Butterfly Pattern
+    public static void butterflyPattern(int n) {
+        //upper portion
+        for (int i=1; i<=n; i++) {
+            for (int j=1; j<=i; j++) {
+                System.out.print("*");
+            }
+            for (int j=1; j<=2*(n-i); j++) {
+                System.out.print(" ");
+            }
+            for (int j=1; j<=i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        //lower / mirrored portion
+        for (int i=n; i>=1; i--) {
+            for (int j = 1; j<=i ; j++) {
+                System.out.print("*");    
+            }
+            for (int j=1; j<=2*(n-i); j++) {
+                System.out.print(" ");
+            }
+            for (int j=1; j<=i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+    }
     //driver code
     public static void main(String[] args) {
         // hollowRectngle(3, 4);
@@ -83,8 +115,9 @@ public class Patterns {
         // invertedPyramidWithNumbers(6);
         // pyramidWithNumbers(5);
         // invrPyraWithNum2(5);
-        // floydsTrangle(5);
-        zeroOneTraingle(5);
+        //  floydsTrangle(5);
+        // zeroOneTraingle(5);
+        butterflyPattern(5);
 
     }
 }
