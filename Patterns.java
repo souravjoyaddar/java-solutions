@@ -1,9 +1,10 @@
 public class Patterns {
+    //hollow rectangle pattern
     public static void hollowRectngle(int rows, int cols) {
         for (int i = 1; i <= rows; i++) {
             for (int j = 1; j <= cols; j++) {
-                if (i == 1 || j == 1 || i == rows || j == cols) {
-                    System.out.print("*");
+                if (i == 1 || i == rows || j == 1 || j == cols) {
+                    System.out.print("* ");
                 } else {
                     System.out.print("  ");
                 } 
@@ -108,16 +109,47 @@ public class Patterns {
         }
 
     }
+    //Solid Rhombus pattern
+    public static void solidRhombus(int n) {
+        for (int i=1; i<=n; i++) {
+            for (int j=1; j<=n-i; j++) {
+                System.out.print(" ");
+            }
+            for (int j=1; j<=n; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    //hollow rhombus pattern
+    public static void hollowRhombus(int n) {
+        for (int i=1; i<=n; i++) {
+            for (int j=1; j<=n-i; j++) {
+                System.out.print(" ");
+            }
+            for (int j=1; j<=n; j++) {
+                if (i==1 || i==n || j==1 || j==n) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
     //driver code
     public static void main(String[] args) {
-        // hollowRectngle(3, 4);
+        // hollowRectngle(5, 4);
         // invertedRoatedHalfPyramiid(5);
         // invertedPyramidWithNumbers(6);
         // pyramidWithNumbers(5);
         // invrPyraWithNum2(5);
         //  floydsTrangle(5);
         // zeroOneTraingle(5);
-        butterflyPattern(5);
+        // butterflyPattern(5);
+        // solidRhombus(5);
+        hollowRhombus(7);
 
     }
 }
