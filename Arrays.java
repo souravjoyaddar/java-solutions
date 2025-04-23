@@ -14,7 +14,7 @@ public class Arrays {
         System.out.println("The smallest number of the array is: " + min);
         return max;
     }
-    
+    //driver code
     public static void main(String[] args) {
         int numbers[] = {4, 6, 8, 10, 18, 12, 14, 1, 16};
 
