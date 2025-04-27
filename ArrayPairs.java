@@ -9,7 +9,7 @@ public class ArrayPairs {
             }
             System.out.println();
         }
-        System.out.println("Total pair is = " + tp);
+        System.out.println("Total pairs is = " + tp);
     }
 
     //driver code
