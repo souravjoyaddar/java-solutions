@@ -1,4 +1,4 @@
-public class Arrays {
+public class LinearSearch {
     public static int getMax(int numbers[]) {
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;

@@ -7,6 +7,8 @@ public class SubArrays {
                 // int end = j;
                 for (int k=i; k<=j; k++) {
                     System.out.print(numbers[k]+" ");
+                    //sum of sub arrays
+                    // find max and min of that sub array
                 }
                 ts++;
                 System.out.println();
