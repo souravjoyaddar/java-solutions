@@ -18,9 +18,7 @@ public class LinearSearch {
     public static void main(String[] args) {
         int numbers[] = {4, 6, 8, 10, 18, 12, 14, 1, 16};
 
-        System.out.println("The largest num of array is: " + getMax(numbers));
+        System.out.println("The largest num of the array is: " + getMax(numbers));
         
-
-    }
-    
+    } 
 }
